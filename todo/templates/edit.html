@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if items %}
+<table class="table table-bordered">
+            <tr>
+                <td>
+                    <form class="form-inline my-2 my-lg-0" method="POST">
+                        {% csrf_token %}
+                        <input class="form-control mr-sm-2" type="edit" value="{{items.item}}"
+                        name="item" aria-label="Search">
+                        <input type="hidden" value="{{items.completed}}" name="completed">
+                        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Update</button>
+                    </form>
+                </td>  
+            </tr>
+</table>
+{% endif %}
+{% endblock %}
