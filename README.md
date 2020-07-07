@@ -11,7 +11,7 @@ django version 2.1.4
 Following are the steps to use this App.
 
 1. Clone this repo to get the code on your local machine.
-2. Open the CMD window(cmd.exe) and go to the folder where got the source code.
+2. Open the CMD window(cmd.exe) and go to the folder where you got the source code.
 3. Run the **activate.bat** file from the **Scripts** folder to activate the virtual environment for this app to run in.
 4. Run following command to start the app.
 
